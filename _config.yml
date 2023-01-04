@@ -26,7 +26,7 @@ github_username:  shellcodesniper
 #facebook_username: jekyll
 #flickr_username: jekyll
 #instagram_username: jekyll
-#linkedin_username: jekyll
+linkedin_username: kuuwange
 #xing_username: jekyll
 #pinterest_username: jekyll
 #youtube_username: jekyll
@@ -50,8 +50,14 @@ gtag: "G-EC051SJ5MV"
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
+about_profile_image: images/profile_image.png
 about_content: | # this will include new lines to allow paragraphs
+  `호기심 Qurious, 밝고 LMAO, 너드하지만 GEEK, 삶을 즐기는 LIFE` 저를 설명할 수 있는 단어입니다.
+  Linux Kernel / Low Level / System 동작 구조 등 너드 하고 진입하기 어렵지만, 그 속의 깊은 동작원리에 대한 깊은 관심과 애정
+  Open-Source & Closed-Source 두가지의 조화로 빠르지만 안정적이고 안정적이지만 생산적인, 모순적인 상황을 해결해내는
+  임기응변, 무거운 상황에서 더욱 빛을 발하는 리드 `잡부` 입니다.
+
+ignore_this: |
   Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
 
   You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
