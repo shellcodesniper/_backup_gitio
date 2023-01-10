@@ -52,10 +52,10 @@ gtag: "G-EC051SJ5MV"
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile_image.png
 about_content: | # this will include new lines to allow paragraphs
-  `호기심 Qurious, 밝고 LMAO, 너드하지만 GEEK, 삶을 즐기는 LIFE` 저를 설명할 수 있는 단어입니다.
-  Linux Kernel / Low Level / System 동작 구조 등 너드 하고 진입하기 어렵지만, 그 속의 깊은 동작원리에 대한 깊은 관심과 애정
-  Open-Source & Closed-Source 두가지의 조화로 빠르지만 안정적이고 안정적이지만 생산적인, 모순적인 상황을 해결해내는
-  임기응변, 무거운 상황에서 더욱 빛을 발하는 리드 `잡부` 입니다.
+  `호기심 Qurious, 밝고 LMAO, 너드하지만 GEEK, 삶을 즐기는 LIFE` 저를 설명할 수 있는 단어입니다.<br/>
+  Linux Kernel / Low Level / System 동작 구조 등 너드 하고 진입하기 어렵지만, 그 속의 깊은 동작원리에 대한 깊은 관심과 애정<br/>
+  Open-Source & Closed-Source 두가지의 조화로 빠르지만 안정적이고 안정적이지만 생산적인, 모순적인 상황을 해결해내는<br/>
+  임기응변, 무거운 상황에서 더욱 빛을 발하는 리드 `잡부` 입니다.<br/>
 
 ignore_this: |
   Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
@@ -71,51 +71,311 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
+        border: weak # Value of `weak` will display a weak border below this item. # Any 
+        title: \[Open-Source] Nvim-Tree
+        link: https://github.com/nvim-tree/nvim-tree.lua/pull/1566
+        link_text: PR_LINK
         additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          - title:  github
             icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+            url: https://github.com/shellcodesniper/nvim-tree.lua
         quote: >
-          Short overview of the project (optional)
+          Nvim Tree Mix-in Sorter for File&Folder Ordering View
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+          Open-Source Contributing
+      - layout: right
+        border: weak # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: \[Open-Source] SimpleDeployer
+        link: https://github.com/shellcodesniper/SimpleDeployer
+        link_text: PROJECT_LINK
+        additional_links:
+          - title: GitHub
+            icon: fab fa-github
+            url: https://github.com/shellcodesniper/SimpleDeployer
+        quote: >
+          Rust / Docker API / NginX
+        description: | # this will include new lines to allow paragraphs
+          Built-in Support Nginx + Cloudflare + .env
+          Red - Green Simple Deployer for Reverse-Proxy NginX
+
+      - layout: left
+        border: weak # Value of `weak` will display a weak border below this item. # Any 
+        title: BLUEPRINT
+        link: https://github.com/shellcodesniper/RUST_BP
+        link_text: PROJECT_LINK
+        additional_links:
+          - title:  Link to Project
+            icon: fab fa-github
+            url: https://github.com/shellcodesniper/RUST_BP
+        quote: >
+          Boilerprint of RUST
+        description: | # this will include new lines to allow paragraphs
+          Boilerprint of RUST
+
+      - layout: right
+        border: weak # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: HOW_TO_SERIES
+        link: https://bdev.io
+        link_text: WIKI_LINK
+        additional_links:
+          - title:  github_link
+            icon: fab fa-github
+            url: https://github.com/shellcodesniper/how_to_series
+        quote: >
+          WIKI FOR BECOME DEVELOPER
+        description: | # this will include new lines to allow paragraphs
+          SHORT DAILY WIKI
+
+      # - layout: left
+      #   border: weak # Value of `weak` will display a weak border below this item. # Any 
+      #   title: Project name
+      #   link: link url
+      #   link_text: PROJECT_LINK
+      #   additional_links:
+      #     - title:  Link to Project
+      #       icon: fab fa-github
+      #       url: Link to Project
+      #   quote: >
+      #     Short overview of the project (optional)
+      #   description: | # this will include new lines to allow paragraphs
+      #     Description about the work on/with the project
+      # - layout: right
+      #   border: weak # Value of `weak` will display a weak border below this item. # Any 
+      #                 # other value (or no value) means no border will be displayed
+      #   title: Project name
+      #   link: link url
+      #   link_text: PROJECT_LINK
+      #   additional_links:
+      #     - title:  Link to Project
+      #       icon: fab fa-github
+      #       url: Link to Project
+      #   quote: >
+      #     Short overview of the project (optional)
+      #   description: | # this will include new lines to allow paragraphs
+      #     Description about the work on/with the project
+
+
+
+
+
   - title: Experience
     layout: list
     content:
       - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
+        border: weak
+        title: 에이라이브
+        sub_title: 책임
+        caption: 2015.12-2016.10
+        #link: 
         quote: >
-          Short description of the company (optional)
+          Web Publishing
         description: | # this will include new lines to allow paragraphs
-          Description of role
+          Web Publishing & Backend
+      - layout: left 
+        border: weak
+        title: Caramella
+        sub_title: R&D 개발팀 팀장
+        caption: 2016.11 ~ Present
+        link: https://caramella.kr
+        quote: >
+          Tech Support / System Level Tech Develop / Backend Develop
+        # description: | # this will include new lines to allow paragraphs
+        #   기술 지원 / 시스템 애플리케이션 개발 / 딥러닝 프로그램 개발 지원 / API 서버 개발
+      - layout: right
+        border: weak
+        title: YoungNYoung
+        sub_title: 프리랜서
+        caption: 2017.5 ~ 2017.11
+        #link: 
+        quote: >
+          청년창업단 홈페이지 개발
+        # description: | # this will include new lines to allow paragraphs
+        #   풀스택 개발 유지보수
+      - layout: left 
+        border: weak
+        title: Je-Clean
+        sub_title: 프리랜서
+        caption: 2017.5 ~ 2017.11
+        link: https://jeclean.com
+        quote: >
+          웹 애플리케이션 개발
+        # description: | # this will include new lines to allow paragraphs
+        #   풀스택 개발 유지보수
+      - layout: right
+        border: weak
+        title: MintToy
+        sub_title: 프리랜서
+        caption: 2018.10 ~ 2019.04
+        link: https://selfietoy.net
+        quote: >
+          AI 얼굴인식 파트
+        # description: | # this will include new lines to allow paragraphs
+        #   얼굴인식 모듈 제공
+      - layout: left 
+        border: weak
+        title: 제주대학교
+        sub_title: 학사 연구원
+        caption: 2018.10-2019.12
+        link: http://multimediacorpus.com
+        quote: >
+          학습보조도구
+        # description: | # this will include new lines to allow paragraphs
+        #   일본 어학 학습 보조 사이트 개발
+      - layout: right
+        border: weak
+        title: 13hz
+        sub_title: #
+        caption: 2020.03 - 2021.05
+        link: https://d-ocean.kr
+        quote: >
+          설계 / 백엔드
+        # description: | # this will include new lines to allow paragraphs
+        #   데이터베이스 설계 및 백엔드
+      - layout: left 
+        border: weak
+        title: andS
+        sub_title: 멘토
+        caption: 2020.5 - 2020.10
+        #link: 
+        quote: >
+          voice over ip 기술을 이용한 안드로이드 기반 통신 앱 멘토링
+        # description: | # this will include new lines to allow paragraphs
+        #   앱스토어 출시까지
   - title: Education
     layout: list
     content:
       - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
+        title: Bachelor ( Expected graduation date 2023. 02 )
+        sub_title: BA Computer Engineering
+        caption: 2016 - 2023
         quote: >
-          Short institution or course description (optional)
+          Jeju National University (2016 - 2023<Expected graduation date 2023. 02)
         description: | # this will include new lines to allow paragraphs
-          Description of qualification
+          Expected graduation date 2023.02
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+      <div> 
+        <div align="right" style="display: flex;">
+          <span dir="auto">
+            <a href="https://hits.seeyoufarm.com" rel="nofollow"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fshellcodesniper%2F&count_bg=%2379C83D&title_bg=%23555555&icon=hashnode.svg&icon_color=%23E7E7E7&title=HIT%21&edge_flat=true" style="max-width: 100%;"></a>
+          </span>
+        </div>
+        <div align="left" style="display: flex;">
+          <b>Hi there 👋 || 안녕하세요! 👋</b>
+        </div> 
+      </div>
+      <br />
 
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+      <!-- 트로피! -->
+      <div align="center">
+        <img align="middle" src="https://github-profile-trophy.vercel.app/?username=shellcodesniper&theme=chalk&rank=SECRET,SSS,SS,S,AAA,AA,A,B&margin-w=15&margin-h=15&column=5" />
+      </div>
+      <br />
+
+      <!-- 나중에 추가할것 : https://www.hackerrank.com/ -->
+
+      <!-- 연락처 -->
+      <div align="center">
+        <b>CONTACT</b>:&nbsp;&nbsp;
+        <a href="mailto:admin@bdev.io">
+          <img align="center" src="https://img.shields.io/badge/MAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white">
+        </a>&nbsp;&nbsp;
+        <b>HOMEPAGE</b>:&nbsp;&nbsp;
+        <a href="https://ql.gl/">
+          <img align="center" src="https://img.shields.io/badge/QL.GL-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white">
+        </a>&nbsp;&nbsp;
+        <b>INSTAGRAM</b>:&nbsp;&nbsp;
+          <a href="https://www.instagram.com/kuuwange" rel="nofollow">
+            <img align="center" src="https://img.shields.io/badge/INSTA-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
+          </a>&nbsp;&nbsp;
+        <b>LINKEDIN</b>:&nbsp;&nbsp;
+          <a href="https://www.linkedin.com/in/kuuwange" rel="nofollow">
+            <img align="center" src="https://img.shields.io/badge/LINKED-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+          </a>&nbsp;&nbsp;
+      </div>
+      <br />
+
+      <!-- 기술 -->
+
+      ### I Love This
+      ![MacOS](https://img.shields.io/badge/macOS-black?&style=for-the-badge&logo=macOS&logoColor=white)&nbsp;
+      ![Rust](https://img.shields.io/badge/Rust-E57324?style=for-the-badge&logo=rust&logoColor=black)&nbsp;
+      ![NodeVim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)&nbsp;
+      ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)&nbsp;
+      ![NestJS](https://img.shields.io/badge/nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)&nbsp;
+      ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)&nbsp;
+      <br />
+      ### EDITOR
+      ![EditorConfig](https://img.shields.io/badge/Editor%20Config-E0EFEF?style=flat-square&logo=editorconfig&logoColor=000)&nbsp;
+      ![.ENV](https://img.shields.io/badge/DOTENV-ECD53F?style=flat-squarege&logo=.env&logoColor=000)&nbsp;
+      ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=flat-squarege&logo=eslint&logoColor=white)&nbsp;
+      ### Frequently Use
+      ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)&nbsp;
+      ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)&nbsp;
+      ![Lua](https://img.shields.io/badge/Lua-2C2D72?style=flat-square&logo=lua&logoColor=white)&nbsp;
+      ![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white)&nbsp;
+      ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=TensorFlow&logoColor=white)&nbsp;
+      ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=flat-square&logo=docker&logoColor=white)&nbsp;
+      ![NginX](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)&nbsp;
+      ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?&style=flat-square&logo=redis&logoColor=white)&nbsp;
+      ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=Oracle&logoColor=white)&nbsp;
+      ![Postgresql](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)&nbsp;
+      ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=Cloudflare&logoColor=white)&nbsp;
+      ![AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)&nbsp;
+      ![Mac M](https://img.shields.io/badge/apple%20silicon-333333?style=flat-square&logo=apple&logoColor=white)&nbsp;
+      ![Redhat](https://img.shields.io/badge/Red%20Hat-EE0000?style=flat-square&logo=redhat&logoColor=white)&nbsp;
+      ![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=flat-square&logo=yarn&logoColor=white)&nbsp;
+      ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=flat-square&logo=notion&logoColor=white)&nbsp;
+      ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)&nbsp;
+      ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=Prometheus&logoColor=white)&nbsp;
+      ![Slack](https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=slack&logoColor=white)&nbsp;
+      ![KakaoTalk](https://img.shields.io/badge/kakaotalk-ffcd00.svg?style=flat-square&logo=kakaotalk&logoColor=000000)&nbsp;
+      ![Line](https://img.shields.io/badge/Line-00C300?style=flat-square&logo=line&logoColor=white)&nbsp;
+      <br/>
+      <!-- STATS -->
+      <table width="100%">
+        <tr>
+          <th align="center">
+            <img width="441" height="1">
+            <p> 
+              <small>
+                Languages All Time
+              </small>
+            </p>
+          </th>
+          <th align="center">
+            <img width="441" height="1">
+              <p> 
+              <small>
+                Coding Activities (Since 2020)  
+              </small>
+            </p>
+          </th>
+        </tr>
+        <tr>
+          <td valign="top">
+            <img src="https://wakatime.com/share/@KuuWangE/f6ea09a8-9b0c-41ba-b6a4-1fcf8798cc26.svg" width="100%">
+          </td>
+          <td valign="top">
+            <img src="https://wakatime.com/share/@KuuWangE/468f48c1-1aa1-49ba-8f8b-dddf8feb3b3b.svg" width="100%">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="width:100%">
+            <div align="center">
+              <img align="middle" width="100%" height="54" src="https://raw.githubusercontent.com/shellcodesniper/shellcodesniper/master/table_title.svg" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="width:100%">
+            <img src="https://wakatime.com/share/@KuuWangE/6e2a5d8e-578f-459e-bcc2-dee6662cc747.svg" width="100%">
+          </td>
+        </tr>
+      </table>
 
 # Footer
 footer_show_references: true
